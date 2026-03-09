@@ -4,7 +4,8 @@ import (
 	"fmt"
 )
 
-func CommandHelp() error {
+// CommandHelp is the callback function for the "help" command in the Pokedex CLI. It prints a welcome message and a list of available commands along with their descriptions.
+func CommandHelp(cfg *Config, args ...string) error {
 	fmt.Println()
 	fmt.Println("Welcome to the Pokedex!")
 	fmt.Println("Usage:")
